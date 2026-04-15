@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Modern portfolio showcasing images from Cloudinary">
+    <title>Trecia Mae Gandia | Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <span class="logo-text">TMG</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#gallery" class="nav-link">Gallery</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+            </ul>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section id="home" class="hero-section">
+            <div class="hero-container">
+                <div class="hero-content">
+                    <div class="hero-badge">
+                        <span class="badge-pulse"></span>
+                        Welcome to my portfolio
+                    </div>
+                    <h1 class="hero-title">
+                        <span class="hero-greeting">Hi, I'm</span>
+                        <span class="hero-name">Trecia Mae Gandia</span>
+                    </h1>
+                    <p class="hero-description">
+                        BSIT III-F3 student showcasing a portfolio of images hosted on Cloudinary, demonstrating the power of cloud-based file hosting and delivery for modern web applications.
+                    </p>
+                    <div class="hero-stats">
+                        <div class="stat">
+                            <span class="stat-number">Cloud-Native</span>
+                            <span class="stat-label">Storage</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">Global</span>
+                            <span class="stat-label">CDN</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">On-Demand</span>
+                            <span class="stat-label">Optimization</span>
+                        </div>
+                    </div>
+                    <div class="hero-buttons">
+                        <a href="#gallery" class="btn-primary">
+                            View Gallery <i class="fas fa-arrow-right"></i>
+                        </a>
+                        <a href="#about" class="btn-secondary">
+                            Learn More <i class="fas fa-user"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="floating-card">
+                        <div class="code-snippet">
+                            <div class="code-line">
+                                <span class="code-keyword">const</span>
+                                <span class="code-variable">developer</span>
+                                <span class="code-operator">=</span>
+                                <span class="code-string">{</span>
+                            </div>
+                            <div class="code-line indent">
+                                <span class="code-property">name:</span>
+                                <span class="code-string">"Trecia Mae Gandia"</span>
+                            </div>
+                            <div class="code-line indent">
+                                <span class="code-property">course:</span>
+                                <span class="code-string">"BSIT"</span>
+                            </div>
+                            <div class="code-line indent">
+                                <span class="code-property">passion:</span>
+                                <span class="code-string">"Web Development"</span>
+                            </div>
+                            <div class="code-line">
+                                <span class="code-string">};<span class="cursor">_</span></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="scroll-indicator">
+                <span>Scroll</span>
+                <i class="fas fa-chevron-down"></i>
+            </div>
+        </section>
+
+        <section id="gallery" class="gallery-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">
+                        <i class="fas fa-images"></i> My Collection
+                    </span>
+                    <h2 class="section-title">Featured Work</h2>
+                    <p class="section-description">
+                        Every image tells a story. Here are the moments and projects that mean the most to me.
+                    </p>
+                </div>
+                <div class="gallery-filter">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="photography">Photography</button>
+                    <button class="filter-btn" data-filter="design">Design</button>
+                    <button class="filter-btn" data-filter="projects">Projects</button>
+                </div>
+                <div class="gallery-grid" id="galleryGrid">
+                    <!-- Images will be loaded dynamically via JavaScript -->
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about-section">
+            <div class="container">
+                <div class="about-wrapper">
+                    <div class="about-image">
+                        <div class="image-frame">
+                            <div class="image-placeholder">
+                                <i class="fas fa-user-circle"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-content">
+                        <span class="section-tag">
+                            <i class="fas fa-user-astronaut"></i> About Me
+                        </span>
+                        <h2 class="section-title">Trecia Mae Gandia</h2>
+                        <div class="about-bio">
+                            <p>I'm a passionate <strong>BSIT III-F3 student</strong> with a keen interest in cloud technologies and modern web development. This portfolio represents my journey in understanding how cloud-based file hosting services like Cloudinary integrate seamlessly with web hosting platforms like Vercel.</p>
+                            <p>Through this project, I've learned how to leverage specialized cloud services for optimal performance, scalability, and global content delivery.</p>
+                        </div>
+                        <div class="architecture-diagram">
+                            <div class="arch-node">
+                                <div class="arch-icon">
+                                    <i class="fas fa-cloud-upload-alt"></i>
+                                </div>
+                                <h4>Cloudinary</h4>
+                                <p>File Server</p>
+                                <small>Images stored and optimized</small>
+                            </div>
+                            <div class="arch-arrow">
+                                <i class="fas fa-arrow-right"></i>
+                            </div>
+                            <div class="arch-node">
+                                <div class="arch-icon">
+                                    <i class="fas fa-globe"></i>
+                                </div>
+                                <h4>Vercel</h4>
+                                <p>Web Server</p>
+                                <small>Static site hosting</small>
+                            </div>
+                            <div class="arch-arrow">
+                                <i class="fas fa-arrow-right"></i>
+                            </div>
+                            <div class="arch-node">
+                                <div class="arch-icon">
+                                    <i class="fas fa-users"></i>
+                                </div>
+                                <h4>End User</h4>
+                                <p>Browser</p>
+                                <small>Seamless delivery</small>
+                            </div>
+                        </div>
+                        <div class="tech-stack">
+                            <h4>Technologies Used</h4>
+                            <div class="tech-badges">
+                                <span class="tech-badge"><i class="fab fa-html5"></i> HTML5</span>
+                                <span class="tech-badge"><i class="fab fa-css3-alt"></i> CSS3</span>
+                                <span class="tech-badge"><i class="fab fa-js"></i> JavaScript</span>
+                                <span class="tech-badge"><i class="fab fa-vercel"></i> Vercel</span>
+                                <span class="tech-badge"><i class="fas fa-cloud"></i> Cloudinary</span>
+                            </div>
+                        </div>
+                        <p class="about-text">
+                            This website is hosted on <strong>Vercel</strong> (web hosting service) while all 
+                            images are stored on and delivered from <strong>Cloudinary</strong> (file hosting service). 
+                            When you view an image, your browser requests it directly from Cloudinary's CDN, 
+                            demonstrating how modern web applications leverage specialized cloud services for 
+                            optimal performance and scalability.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <p>Images hosted on <strong>Cloudinary</strong> • Website deployed on <strong>Vercel</strong></p>
+                    <p class="copyright">© 2024 Trecia Mae Gandia. All rights reserved.</p>
+                </div>
+                <div class="footer-social">
+                    <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <button class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
